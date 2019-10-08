@@ -1,0 +1,34 @@
+{
+    "name": "obj_ui_top",
+    "type": "frame",
+    "x": 0,
+    "y": 0,
+    "sprite": "spr_ui_test",
+    "visible": true,
+    "config": {
+        "scripts": {
+            "init": "script_ui_init",
+            "mouse": {
+                "click": "script_ui_click",
+                "moveIn": "script_ui_in",
+                "moveOut": "script_ui_out"
+            },
+            "keyboard": {
+                "A,vk_shift": "script_ui_kb_a_s",
+                "vk_left": "script_ui_kb_left"
+            },
+            "step": "script_ui_step"
+        }
+    },
+    "components": [
+        {
+            "name": "obj_ui_text",
+            "type": "text",
+            "x": 50,
+            "y": 50,
+            "config": {
+                "text": "test"
+            }
+        }
+    ]
+}
