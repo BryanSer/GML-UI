@@ -7,6 +7,7 @@
     "visible": true,
     "config": {
         "scripts": {
+            "draw": "script_ui_draw",
             "init": "script_ui_init",
             "mouse": {
                 "click": "script_ui_click",
@@ -17,7 +18,8 @@
                 "A,vk_shift": "script_ui_kb_a_s",
                 "vk_left": "script_ui_kb_left"
             },
-            "step": "script_ui_step"
+            "step": "script_ui_step",
+            "destroy": "script_ui_destory"
         }
     },
     "components": [
@@ -26,6 +28,7 @@
             "type": "text",
             "x": 50,
             "y": 50,
+            "visible": true,
             "config": {
                 "text": "test"
             }

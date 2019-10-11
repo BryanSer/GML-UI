@@ -1,0 +1,10 @@
+{
+    "name": "test_text",
+    "type": "text",
+    "x": 50,
+    "y": 50,
+    "visible": true,
+    "config": {
+        "text": "test text"
+    }
+}
