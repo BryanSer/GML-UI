@@ -3,8 +3,25 @@
     "type": "frame",
     "x": 0,
     "y": 0,
-    "sprite": "spr_ui_test",
+    "sprite": {
+		"fname": "ui.png",
+		"imgnum": 1,
+		"removeback": true,
+		"smooth": false,
+		"xorig": 0,
+		"yorig": 0
+	},
     "visible": true,
+    "hover": {
+        "name": "obj_ui_text",
+        "type": "text",
+        "x": 50,
+        "y": 50,
+        "visible": true,
+        "config": {
+            "text": "test"
+        }
+    },
     "config": {
         "scripts": {
             "draw": "script_ui_draw",
