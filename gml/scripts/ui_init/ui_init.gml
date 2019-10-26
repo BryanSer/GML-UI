@@ -24,7 +24,8 @@ enum UI_Field{
 	Config,
 	Components,
 	Father,
-	InstanceID
+	InstanceID,
+	Hover
 }
 global.g_ui_fieldMap[? UI_Field.Name] = ["name", "defaultUIName"]
 global.g_ui_fieldMap[? UI_Field.Type] = ["type", "none"]
@@ -34,6 +35,7 @@ global.g_ui_fieldMap[? UI_Field.Display_Sprite] = ["sprite", noone]
 global.g_ui_fieldMap[? UI_Field.Display_Visible] = ["visible", false]
 global.g_ui_fieldMap[? UI_Field.Config] = ["config", ds_map_create()] 
 global.g_ui_fieldMap[? UI_Field.Components] = ["components", ds_list_create()]
+global.g_ui_fieldMap[? UI_Field.Hover] = ["hover", null]
 
 global.g_ui_typeMap[? "frame"] = obj_ui_frame
 global.g_ui_typeMap[? "text"] = obj_ui_text

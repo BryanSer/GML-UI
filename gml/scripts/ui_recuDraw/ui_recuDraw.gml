@@ -5,6 +5,9 @@
 var ui = argument0
 var inst = ui[? UI_Field.InstanceID]
 with(inst){
+	var vec = ui_getCoordinate(v_ui)
+	x = vec[0]
+	y = vec[1]
 	if(!visible){
 		exit
 	}
@@ -21,4 +24,9 @@ for(var i = 0; i < length; i++){
 	var comp = sub[| i]
 	var compui = global.g_ui_data[? comp]
 	ui_recuDraw(compui)
+}
+var hover = ui[? UI_Field.Hover]
+if(hover != null){
+	var data = global.g_ui_data[? hover]
+	ui_recuDraw(data)
 }

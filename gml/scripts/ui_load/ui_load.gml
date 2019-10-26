@@ -31,6 +31,10 @@ global.g_ui_data[? t_ui_id] = t_ui
 	}
 #endregion
 t_ui[? UI_Field.Father] = undefined
+var t_spr = t_ui[? UI_Field.Display_Sprite] // 转换精灵
+if(t_spr != noone){
+	t_ui[? UI_Field.Display_Sprite] = ui_utils_readSprite(t_spr)
+}
 #region 拷贝config
 	var config = t_ui[? UI_Field.Config]
 	var copycfg = ds_map_create()
@@ -51,9 +55,19 @@ t_ui[? UI_Field.Father] = undefined
 	}
 	t_ui[? UI_Field.Components] = comp
 #endregion
+#region 读取Hover
+	var hover = t_ui[? UI_Field.Hover]
+	if(hover != null){
+		var tid = ui_load(hover)
+		var subui = global.g_ui_data[? tid]
+		subui[? UI_Field.Father] = t_ui_id
+		subui[? UI_Field.Display_Visible] = false
+		t_ui[? UI_Field.Hover] = tid
+	}
+#endregion
 global.g_ui_currCreateId = t_ui_id
 var type = global.g_ui_typeMap [? t_ui[? UI_Field.Type]]
-if(type == undefined){
+if(type == undefined){   
 	msg = "UI type undefine"
 	debug
 }else{

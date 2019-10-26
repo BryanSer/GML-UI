@@ -6,3 +6,7 @@ if(mouse != undefined){
 		script_execute(moveIn,v_ui)
 	} 
 }
+if(v_ui_hoverAt != null){
+	var hdata = global.g_ui_data[? v_ui_hoverAt]
+	hdata[? UI_Field.Display_Visible] = true
+}

@@ -15,6 +15,7 @@ if(ds_map_exists(v_ui_config,"scripts")){
 	v_ui_scripts = ds_map_create()
 	v_ui_scripts_destoryOnDestroy = true
 }
+v_ui_hoverAt = ui[? UI_Field.Hover]
 var init = v_ui_scripts[? "init"]
 if(init != undefined){
 	script_execute(init, v_ui)

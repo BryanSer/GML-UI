@@ -15,16 +15,6 @@
             "m_owner": "4a96ea5d-9274-4c45-8324-7f3020a18326"
         },
         {
-            "id": "937dea89-036e-48b2-977e-461e3ad001f6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 74,
-            "eventtype": 8,
-            "m_owner": "4a96ea5d-9274-4c45-8324-7f3020a18326"
-        },
-        {
             "id": "56997df4-c450-4c18-83b7-859b9f32d977",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -82,6 +72,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
             "eventtype": 8,
+            "m_owner": "4a96ea5d-9274-4c45-8324-7f3020a18326"
+        },
+        {
+            "id": "f3a61df3-2836-480d-ba9b-e647004c3566",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
             "m_owner": "4a96ea5d-9274-4c45-8324-7f3020a18326"
         }
     ],
@@ -170,6 +170,20 @@
             "resourceFilter": 1023,
             "value": "UI_DEFAULT_DRAW_SCRIPT",
             "varName": "v_ui_defaultDrawScript",
+            "varType": 4
+        },
+        {
+            "id": "8bd33ff8-c234-4e68-8e4a-67a3607428cc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "null",
+            "varName": "v_ui_hoverAt",
             "varType": 4
         }
     ],
